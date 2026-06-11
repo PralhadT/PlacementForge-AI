@@ -1,0 +1,75 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: all 0.15s ease;
+  letter-spacing: 0.02em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+/* Variants */
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+  box-shadow: var(--shadow-button);
+}
+
+.btn-primary:active {
+  box-shadow: var(--shadow-button-active);
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: var(--border-3d);
+  box-shadow: 0 4px 0 rgba(0,0,0,0.5), 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.btn-secondary:active {
+  box-shadow: 0 0px 0 rgba(0,0,0,0.5), 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-highlight);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Sizes */
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-md {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: var(--radius-md);
+}

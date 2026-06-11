@@ -1,0 +1,18 @@
+.card {
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: var(--radius-lg);
+}
+
+.box-3d {
+  background: var(--bg-card);
+  border: var(--border-3d);
+  box-shadow: var(--shadow-drop-3d);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.5), 
+              -12px -12px 24px rgba(255, 255, 255, 0.04);
+}
